@@ -6,7 +6,7 @@ interface LegalPageProps {
 
 const TermsOfService: React.FC<LegalPageProps> = ({ onBack }) => {
   return (
-    <div className="min-h-screen bg-white text-slate-800 selection:bg-blue-100">
+    <div className="min-h-[100dvh] bg-white text-slate-800 selection:bg-blue-100">
       <nav className="sticky top-0 bg-white/80 backdrop-blur-md border-b border-slate-100 px-6 py-4 flex justify-between items-center z-10">
         <div className="flex items-center gap-2">
           <div className="bg-blue-600 w-6 h-6 rounded flex items-center justify-center text-white font-bold text-xs">C</div>

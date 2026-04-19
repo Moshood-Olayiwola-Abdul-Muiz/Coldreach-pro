@@ -108,7 +108,7 @@ const OAuthCallback: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-slate-50">
+    <div className="flex items-center justify-center min-h-[100dvh] bg-slate-50">
       <div className="bg-white p-8 rounded-2xl shadow-xl max-w-md w-full text-center">
         <div className="mb-6">
           <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">

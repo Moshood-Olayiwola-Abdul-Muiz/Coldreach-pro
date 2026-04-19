@@ -26,7 +26,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, isOpen, onCl
 
   return (
     <aside className={`
-      fixed inset-y-0 left-0 z-[100] w-[260px] bg-white flex flex-col h-screen transform transition-transform duration-300 ease-in-out border-r border-slate-100
+      fixed inset-y-0 left-0 z-[100] w-[260px] bg-white flex flex-col h-[100dvh] transform transition-transform duration-300 ease-in-out border-r border-slate-100
       lg:translate-x-0 lg:static lg:flex shadow-2xl lg:shadow-none
       ${isOpen ? 'translate-x-0' : '-translate-x-full'}
     `}>

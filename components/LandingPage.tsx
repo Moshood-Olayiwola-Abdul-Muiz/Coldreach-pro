@@ -6,7 +6,7 @@ interface LandingPageProps {
 
 const LandingPage: React.FC<LandingPageProps> = ({ onEnter }) => {
   return (
-    <div className="bg-white min-h-screen text-slate-900 selection:bg-blue-100">
+    <div className="bg-white min-h-[100dvh] text-slate-900 selection:bg-blue-100">
       {/* Nav */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100 h-16 flex items-center justify-between px-6 lg:px-12">
         <div className="flex items-center gap-2">
