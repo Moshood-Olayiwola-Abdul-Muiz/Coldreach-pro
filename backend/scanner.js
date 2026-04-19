@@ -7,7 +7,7 @@ function normalizeStoreUrl(rawUrl) {
     throw new Error("A valid URL is required.");
   }
   const trimmed = rawUrl.trim();
-  const withProtocol = /^https?:\/\/i.test(trimmed) ? trimmed : `https://${trimmed}`;
+  const withProtocol = /^https?:\/\//i.test(trimmed) ? trimmed : `https://${trimmed}`;
   return new URL(withProtocol).origin;
 }
 
