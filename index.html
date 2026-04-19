@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- GOOGLE SEARCH CONSOLE VERIFICATION -->
+    <meta name="google-site-verification" content="B0v5wi-milSTwTC11h_-lR_pOyvoQ-Lc9JUfAtZhhcE" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>ColdReach Pro - High-Performance Outreach Platform</title>
+    
+    <meta name="description" content="Find leads, personalize outreach, and close more deals. The premier outreach platform built for results.">
+    <meta name="keywords" content="cold email, lead generation, outreach, sales automation">
+    <link rel="icon" type="image/png" href="/icon.png">
+    <link rel="apple-touch-icon" href="/icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#2563eb">
+    
+    <script src="https://js.paystack.co/v1/inline.js" async defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .no-select { user-select: none; -webkit-user-select: none; }
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+        /* Rich Text Editor Placeholder Logic */
+        [contenteditable]:empty:before {
+            content: attr(data-placeholder);
+            color: #94a3b8;
+            cursor: text;
+        }
+        
+        /* Ensure inserted links are always visible but clean */
+        [contenteditable] a {
+            color: #2563eb;
+            text-decoration: underline;
+            pointer-events: auto !important;
+        }
+
+        /* Prevent layout shift during step transitions */
+        .step-container { min-height: 400px; }
+    </style>
+    <script>
+      (function() {
+        const env = { 
+          NODE_ENV: 'production',
+          API_KEY: '' 
+        };
+        const processShim = { env };
+        window.process = processShim;
+        globalThis.process = processShim;
+        window.global = window;
+      })();
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js').then(registration => {
+        console.log('SW registered: ', registration);
+      }).catch(registrationError => {
+        console.log('SW registration failed: ', registrationError);
+      });
+    });
+  }
+</script>
+</body>
+</html>
