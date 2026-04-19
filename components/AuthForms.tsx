@@ -156,7 +156,7 @@ const AuthForms: React.FC<AuthFormsProps> = ({ initialMode, onAuthSuccess, onNav
     }
   };
 return (
-    <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4 py-20">
+    <div className="min-h-[100dvh] bg-slate-50 flex items-center justify-center p-4 py-20">
       <div className="max-w-md w-full bg-white rounded-[2.5rem] shadow-2xl border border-slate-100 overflow-hidden">
         <div className="p-10 pb-6">
           <div className="flex items-center gap-3 mb-10 justify-center">
