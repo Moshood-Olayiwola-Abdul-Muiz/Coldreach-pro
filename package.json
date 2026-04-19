@@ -1,0 +1,46 @@
+{
+  "name": "coldreach-pro",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server.ts",
+    "start": "node server.ts",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "tsc --noEmit",
+    "discover:server": "node backend/server.js",
+    "backend:start": "node src/server.js",
+    "bot:run": "node -e \"import('./src/bot/runner.js').then(m=>m.runDiscoveryBot())\""
+  },
+  "dependencies": {
+    "@netlify/blobs": "^10.7.4",
+    "axios": "^1.14.0",
+    "better-sqlite3": "^12.6.2",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "framer-motion": "^12.35.1",
+    "googleapis": "^171.4.0",
+    "lucide-react": "^0.577.0",
+    "node-cron": "^4.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "recharts": "2.13.0",
+    "playwright": "^1.53.0",
+    "@supabase/supabase-js": "^2.49.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.1",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.14.0",
+    "@types/node-cron": "^3.0.11",
+    "@vitejs/plugin-react": "^5.0.0",
+    "tailwindcss": "^4.2.1",
+    "tsx": "^4.21.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}
